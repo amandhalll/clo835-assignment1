@@ -39,8 +39,8 @@ jobs:
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY_DB:$IMAGE_TAG -f Dockerfile_mysql .
         # Unit test
         docker run -d -e MYSQL_ROOT_PASSWORD=pw  $ECR_REGISTRY/$ECR_REPOSITORY_DB:$IMAGE_TAG
-        export DBHOST=172.17.0.2
-        export DBPORT=3306
+        export DBHOST=127.0.0.1
+        export DBPORT=3307
         export DBUSER=root
         export DATABASE=employees
         export DBPWD=pw
