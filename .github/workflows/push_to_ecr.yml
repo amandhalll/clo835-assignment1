@@ -31,7 +31,7 @@ jobs:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY_DB: my_db
         ECR_REPOSITORY_APP: my_app
-        IMAGE_TAG: vlatest
+        IMAGE_TAG: latest
       run: |
         ls -ltra
         # Docker build
