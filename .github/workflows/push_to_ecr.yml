@@ -31,7 +31,7 @@ jobs:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY_DB: mysql
         ECR_REPOSITORY_APP: web
-        IMAGE_TAG: v2.0
+        IMAGE_TAG: latest
       run: |
         ls -ltra
         # Docker build
