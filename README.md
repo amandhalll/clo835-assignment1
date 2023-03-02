@@ -1,5 +1,6 @@
 ### Create SSH key pair
-```ssh-keygen -t rsa``` 
+```ssh-keygen -t rsa```
+
 Press enter thrice after running this command
 
 ### Clone Repo
